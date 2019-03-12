@@ -1,0 +1,35 @@
+img {
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+  float: left;
+}
+
+li {
+  list-style-type: none;
+}
+
+li::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+input {
+  border: #A17C6B 1px solid;
+  border-radius: 3px;
+  color: #3C887E;
+  font-size: 20px;
+  height: 30px;
+  width: 40vw;
+}
+
+li {
+  background: #CEB5A7;
+  border-radius: 8px;
+
+  img {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
