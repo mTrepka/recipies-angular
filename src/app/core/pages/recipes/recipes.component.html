@@ -1,0 +1,18 @@
+<h1>Recipe</h1>
+<ul *ngIf="!recipe">
+  <input type="text" [(ngModel)]="filter" (keyup)="change()">
+</ul>
+<ul *ngIf="recipes">
+  <li *ngFor="let recipe of recipes">
+    <h2>{{recipe.r_name}}</h2>
+    <p>{{recipe.r_description}}</p>
+  </li>
+</ul>
+<ul *ngIf="category">
+  <li *ngFor="let recipe of category.recipes">
+    <h2>{{recipe.r_name}}</h2>
+    <p>{{recipe.r_description}}</p>
+    <!--<h1><a routerLink="/categories/{{category.id}}">{{category.cname}}</a></h1>-->
+  </li>
+</ul>
+

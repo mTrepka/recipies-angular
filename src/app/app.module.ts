@@ -7,7 +7,7 @@ import {NavComponent} from './core/static/nav/nav.component';
 import {FooterComponent} from './core/static/footer/footer.component';
 import {HeaderComponent} from './core/static/header/header.component';
 import {TagsComponent} from './core/pages/tags/tags.component';
-import {RecipiesComponent} from './core/pages/recipies/recipies.component';
+import {RecipesComponent} from './core/pages/recipes/recipes.component';
 import {CategoriesComponent} from './core/pages/categories/categories.component';
 import {IngredientsComponent} from './core/pages/ingredients/ingredients.component';
 import {ContactComponent} from './core/pages/contact/contact.component';
@@ -23,7 +23,7 @@ import {FormsModule} from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     TagsComponent,
-    RecipiesComponent,
+    RecipesComponent,
     CategoriesComponent,
     IngredientsComponent,
     ContactComponent,
