@@ -5,8 +5,8 @@ import {AboutComponent} from './core/pages/about/about.component';
 import {ContactComponent} from './core/pages/contact/contact.component';
 import {CategoriesComponent} from './core/pages/categories/categories.component';
 import {RecipesComponent} from './core/pages/recipes/recipes.component';
-import {TagsComponent} from './core/pages/tags/tags.component';
 import {IngredientsComponent} from './core/pages/ingredients/ingredients.component';
+import {RecipeComponent} from './core/pages/recipes/recipe/recipe.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,8 +14,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'categories/:id', component: CategoriesComponent},
   {path: 'categories', component: CategoriesComponent},
-  {path: 'recipies', component: RecipesComponent},
-  {path: 'tags', component: TagsComponent},
+  {path: 'recipes', component: RecipesComponent},
+  {path: 'recipes/:id', component: RecipeComponent},
   {path: 'ingredients', component: IngredientsComponent}
 ];
 

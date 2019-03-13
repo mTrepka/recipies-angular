@@ -6,7 +6,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {NavComponent} from './core/static/nav/nav.component';
 import {FooterComponent} from './core/static/footer/footer.component';
 import {HeaderComponent} from './core/static/header/header.component';
-import {TagsComponent} from './core/pages/tags/tags.component';
 import {RecipesComponent} from './core/pages/recipes/recipes.component';
 import {CategoriesComponent} from './core/pages/categories/categories.component';
 import {IngredientsComponent} from './core/pages/ingredients/ingredients.component';
@@ -15,6 +14,7 @@ import {AboutComponent} from './core/pages/about/about.component';
 import {HomeComponent} from './core/pages/home/home.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {RecipeComponent} from './core/pages/recipes/recipe/recipe.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,13 @@ import {FormsModule} from '@angular/forms';
     NavComponent,
     FooterComponent,
     HeaderComponent,
-    TagsComponent,
     RecipesComponent,
     CategoriesComponent,
     IngredientsComponent,
     ContactComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,

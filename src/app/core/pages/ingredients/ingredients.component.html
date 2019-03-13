@@ -1,3 +1,7 @@
-<p>
-  ingredients works!
-</p>
+<h1>Ingredients</h1>
+<input type="text" [(ngModel)]="filter" (keyup)="change()">
+<ul *ngIf="ingredients">
+  <li *ngFor="let ingredient of ingredients">
+    <h2>{{ingredient.iname}}</h2>
+  </li>
+</ul>

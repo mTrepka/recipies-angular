@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {RecipeService} from '../../../service/recipe.service';
 
 @Component({
@@ -10,25 +9,16 @@ import {RecipeService} from '../../../service/recipe.service';
 export class RecipesComponent implements OnInit {
   recipes: object;
   recipesBase;
-  recipe: object;
-  singleRecipe: boolean;
-  recNumber: string;
   filter: string = null;
 
-  constructor(private recipeService: RecipeService, private activatedRoute: ActivatedRoute) {
+  constructor(private recipeService: RecipeService) {
   }
 
   ngOnInit() {
-    this.recNumber = this.activatedRoute.snapshot.paramMap.get('id');
-    this.singleRecipe = this.recNumber == null;
-    if (this.singleRecipe) {
-      this.recipeService.getRecipes().subscribe(e => {
-        this.recipesBase = e;
-        this.recipes = e;
-      });
-    } else {
-      this.recipeService.getRecipe(this.recNumber).subscribe(e => this.recipe = e);
-    }
+    this.recipeService.getRecipes().subscribe(e => {
+      this.recipesBase = e;
+      this.recipes = e;
+    });
 
   }
 
